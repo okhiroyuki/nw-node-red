@@ -1,0 +1,37 @@
+{
+  "name": "nw-node-red",
+  "version": "0.0.1",
+  "description": "NW.js Node-RED template",
+  "node-main": "main.js",
+  "main": "http://localhost:1880/red",
+  "scripts": {
+    "start": "nw .",
+    "test": "gurnt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okhiroyuki/nw-node-red.git"
+  },
+  "author": {
+    "name": "Hiroyuki Okada",
+    "email": "ok.okada.hiroyuki@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/okhiroyuki/nw-node-red/issues"
+  },
+  "homepage": "https://github.com/okhiroyuki/nw-node-red#readme",
+  "keywords": [
+    "nwjs",
+    "node-red"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-red": "^1.0.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-jshint": "^2.1.0",
+    "nw": "^0.43.4-sdk"
+  }
+}
