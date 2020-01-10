@@ -6,7 +6,7 @@
   "main": "http://localhost:1880/red",
   "scripts": {
     "start": "nw .",
-    "test": "gurnt"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,6 @@
   },
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-cli": "^1.3.2",
     "grunt-contrib-jshint": "^2.1.0",
     "nw": "^0.43.4-sdk"
   }
