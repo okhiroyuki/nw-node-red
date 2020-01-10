@@ -2,10 +2,8 @@
   "name": "nw-node-red",
   "version": "0.0.1",
   "description": "NW.js Node-RED template",
-  "node-main": "main.js",
-  "main": "http://localhost:1880/red",
   "scripts": {
-    "start": "nw .",
+    "start": "nw ./src",
     "test": "grunt"
   },
   "repository": {
@@ -32,6 +30,7 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-jshint": "^2.1.0",
+    "grunt-nw-builder": "^3.1.0",
     "nw": "^0.43.4-sdk"
   }
 }
