@@ -14,3 +14,9 @@ npm run start
 ```shell
 grunt
 ```
+
+## Build
+
+```shell
+npm run dist
+```
