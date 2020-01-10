@@ -20,10 +20,19 @@ module.exports = function(grunt) {
                     }
                 }
             },
-        }
+        },
+        nwjs: {
+            options: {
+                platforms: ['osx64'],
+                buildDir: './dist', // Where the build version of my NW.js app is saved
+            },
+            src: ['./src/*'] // Your NW.js app
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-nw-builder');
 
     grunt.registerTask('default', ['jshint:all']);
+    grunt.registerTask('build', ['jshint:all', 'nwjs']);
 };

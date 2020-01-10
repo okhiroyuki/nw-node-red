@@ -1,0 +1,6 @@
+{
+    "name": "nw-node-red",
+    "version": "0.0.1",
+    "node-main": "./main.js",
+    "main": "http://localhost:1880/red"  
+}
