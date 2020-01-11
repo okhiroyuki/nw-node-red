@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require("express");
 const RED = require("node-red");
+const os = require('os');
 
 const app = express();
 const port = 1880;
@@ -15,6 +16,8 @@ server.on('error', (err) => {
 const settings = {
     httpAdminRoot:"/red",
     httpNodeRoot: "/api",
+    userDir: os.homedir() + "/.nw-node-red",
+    nodesDir: os.homedir() + "/.nw-node-red",
     editorTheme: {
         palette: {
             editable: false
