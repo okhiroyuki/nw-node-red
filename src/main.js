@@ -2,9 +2,12 @@ const http = require('http');
 const express = require("express");
 const RED = require("node-red");
 const os = require('os');
+const fs = require('fs');
 
 const app = express();
 const port = 1880;
+
+const HOME_DIR = os.homedir + "/.nw-node-red"
 
 app.use("/",express.static("public"));
 
@@ -16,8 +19,8 @@ server.on('error', (err) => {
 const settings = {
     httpAdminRoot:"/red",
     httpNodeRoot: "/api",
-    userDir: os.homedir() + "/.nw-node-red",
-    nodesDir: os.homedir() + "/.nw-node-red",
+    userDir: HOME_DIR,
+    nodesDir: HOME_DIR + "/nodes",
     editorTheme: {
         palette: {
             editable: false
