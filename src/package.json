@@ -5,6 +5,10 @@
     "main": "http://localhost:1880/red",
     "build": {
         "nwVersion": "0.43.4",
-        "output": "../dist"
+        "output": "../dist",
+        "mac": {
+            "displayName": "nw-node-red",
+            "icon": "./assets/nodered.icns"
+        }
     }
 }
