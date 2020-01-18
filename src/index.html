@@ -101,7 +101,11 @@
         //     label: template[0].label,
         //     submenu: submenu
         // }));
-        nw.Window.get().menu = menu;
+        var win = nw.Window.get();
+        win.menu = menu;
+        win.setPosition("center");
+        win.maximize();
+
         location.href = "http://localhost:" + listenPort + urledit;
     </script>
 </header>
