@@ -1,7 +1,8 @@
 {
   "name": "nw-node-red",
   "version": "0.0.1",
-  "description": "NW.js Node-RED template",
+  "description": "Nw.js Node-RED application starter kit for development",
+  "main": "src/main.js",
   "scripts": {
     "start": "nw ./src",
     "test": "grunt",
@@ -26,7 +27,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "node-red": "^1.0.3"
+    "node-red": "^1.0.3",
+    "node-red-dashboard": "^2.19.3"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
