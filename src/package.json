@@ -1,14 +1,30 @@
 {
-    "name": "nw-node-red",
+    "name": "Node-RED NW.js",
+    "appId": "com.nwjs.node-red",
     "version": "0.0.1",
     "node-main": "./main.js",
-    "main": "http://localhost:1880/red",
+    "main": "./index.html",
     "build": {
         "nwVersion": "0.43.4",
         "output": "../dist",
         "mac": {
-            "displayName": "nw-node-red",
-            "icon": "./assets/nodered.icns"
+            "copyright": "Copyright © 2020 Hiroyuki Okada",
+            "icon": "./assets/icon.icns"
+        },
+        "win":{
+            "copyright": "Copyright © 2020 Hiroyuki Okada",
+            "icon": "./assets/icon.ico"
         }
+    },
+    "window":{
+        "position": "center",
+        "resizable": true,
+        "fullscreen": false,
+        "kiosk": false
+    },
+    "NRnwjs":{
+        "port": 18880,
+        "editable": false,
+        "flowFile": "nwjsflow.json"
     }
 }
