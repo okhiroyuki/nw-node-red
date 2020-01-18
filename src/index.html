@@ -14,10 +14,12 @@
     location.href = "http://localhost:" + listenPort + urledit;
 
     let menu = new nw.Menu({type: 'menubar'});
-    menu.createMacBuiltin(appName,{
-        hideEdit: true,
-        hideWindow: false
-    });
+    if(process.platform === 'darwin'){
+        menu.createMacBuiltin(appName,{
+            hideEdit: true,
+            hideWindow: false
+        });
+    }
 
     const template = [{
         label: "View",
@@ -70,11 +72,11 @@
         console.log(sm);
         submenu.append(new nw.MenuItem(sm));
     }
-
-    menu.insert(new nw.MenuItem({
+    
+    menu.append(new nw.MenuItem({
         label: template[0].label,
         submenu: submenu
-    }),1);
+    }));
     nw.Window.get().menu = menu;
 </script>
 
