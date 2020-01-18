@@ -1,6 +1,6 @@
 # nw-node-red
 
-This is an NW.js template to embed Node-RED with an existing Node-RED project to create a native application.
+This is an [NW.js](https://github.com/nwjs/nw.js) template to embed Node-RED with an existing Node-RED project to create a native application.
 
 ## Configuring the project for building
 
