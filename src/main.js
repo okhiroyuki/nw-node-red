@@ -1,4 +1,3 @@
-'use strict';
 const pkg = require('./package.json');
 let options;
 if (pkg.hasOwnProperty("NRnwjs")) { options = pkg["NRnwjs"] }
