@@ -5,7 +5,7 @@
     "node-main": "./main.js",
     "main": "./index.html",
     "build": {
-        "nwVersion": "0.43.4",
+        "nwVersion": "0.43.6",
         "output": "../dist",
         "mac": {
             "copyright": "Copyright © 2020 Hiroyuki Okada",
@@ -17,7 +17,6 @@
         }
     },
     "window":{
-        "position": "center",
         "resizable": true,
         "fullscreen": false,
         "kiosk": false
