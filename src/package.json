@@ -1,9 +1,10 @@
 {
     "name": "Node-RED NW.js",
     "appId": "com.nwjs.node-red",
-    "version": "0.0.1",
+    "version": "0.2.0",
     "node-main": "./main.js",
-    "main": "./index.html",
+    "main": "http://localhost:18880/red",
+    "node-remote" : "<all_urls>",
     "build": {
         "nwVersion": "0.43.6",
         "output": "../dist",
@@ -22,7 +23,6 @@
         "kiosk": false
     },
     "NRnwjs":{
-        "port": 18880,
         "editable": false,
         "flowFile": "nwjsflow.json"
     }

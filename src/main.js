@@ -4,7 +4,7 @@ if (pkg.hasOwnProperty("NRnwjs")) { options = pkg["NRnwjs"] }
 
 // Some settings you can edit if you don't set them in package.json
 // console.log(options);
-const listenPort = options.port || 18880;
+const listenPort = new URL(pkg["main"]).port;
 const editable = options.editable || true;       // set this to false to create a run only application - no editor/no console
 let flowfile = options.flowFile || 'nwjsflow.json'; // default Flows file name - loaded at start
 
@@ -69,6 +69,9 @@ const settings = {
     userDir: userdir,
     nodesDir: userdir + "./nodes",
     editorTheme: {
+        page:{
+            scripts: [__dirname + "/header.js"]
+        },
         palette: {
             editable: false
         },
