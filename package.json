@@ -31,9 +31,9 @@
     "node-red-dashboard": "^2.19.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.2.1",
     "grunt-contrib-jshint": "^2.1.0",
-    "nw": "^0.43.6-sdk",
+    "nw": "^0.47.1-sdk",
     "nwjs-builder-phoenix": "^1.15.0"
   }
 }
