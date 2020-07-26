@@ -6,7 +6,7 @@
     "main": "http://localhost:18880/red",
     "node-remote" : "<all_urls>",
     "build": {
-        "nwVersion": "0.43.6",
+        "nwVersion": "0.47.1",
         "output": "../dist",
         "mac": {
             "copyright": "Copyright © 2020 Hiroyuki Okada",
