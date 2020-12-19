@@ -1,12 +1,12 @@
 {
     "name": "Node-RED NW.js",
     "appId": "com.nwjs.node-red",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "node-main": "./main.js",
     "main": "http://localhost:18880/red",
     "node-remote" : "<all_urls>",
     "build": {
-        "nwVersion": "0.47.1",
+        "nwVersion": "0.50.2",
         "output": "../dist",
         "mac": {
             "copyright": "Copyright © 2020 Hiroyuki Okada",
