@@ -72,12 +72,14 @@ const settings = {
         page:{
             scripts: [__dirname + "/header.js"]
         },
-        palette: {
-            editable: false
-        },
         projects: {
             enabled: false
         }
+    },
+    externalModules :{
+        palette: {
+            allowInstall: false
+        },
     },
     functionGlobalContext: { }
 };
